@@ -1,0 +1,41 @@
+{
+  "name": "@reneturcios/dsarguide",
+  "version": "0.1.0",
+  "description": "DSAR deadlines, breach notification clocks and triage, AI-tool DPIA checks, HR retention periods and letter templates, forwarded from the hosted Double AIgents DSAR service. One bin serves a small CLI and the MCP server.",
+  "mcpName": "io.github.CloudCorpRecords/dsarguide",
+  "type": "module",
+  "bin": {
+    "dsarguide": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "server.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudCorpRecords/dsarguide.git"
+  },
+  "homepage": "https://github.com/CloudCorpRecords/dsarguide#readme",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1",
+    "zod": "^4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4",
+    "typescript": "^5"
+  }
+}
